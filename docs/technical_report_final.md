@@ -152,4 +152,4 @@ Integrity statement:
 GenAI evidence references are provided in:
 
 - `docs/genai_declaration_appendix.md`
-- `docs/genai_logs/` (log index and evidence placeholders)
+- `docs/genai_logs/` (summary logs, test evidence, and exported conversation examples)

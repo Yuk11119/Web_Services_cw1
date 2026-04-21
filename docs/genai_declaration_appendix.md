@@ -25,5 +25,9 @@
 | `docs/genai_logs/log_2026-04-19_api_build_debug.md` | 2026-04-19 | API scaffolding/debug assistance evidence |
 | `docs/genai_logs/log_2026-04-21_report_preparation.md` | 2026-04-21 | Report drafting/refinement assistance evidence |
 | `docs/genai_logs/test_evidence_2026-04-21.txt` | 2026-04-21 | Local verification output (`pytest -q`, 6 passed) |
+| `docs/genai_logs/exported_examples/example_01_planning_excerpt.md` | 2026-04-19 | Exported planning conversation example |
+| `docs/genai_logs/exported_examples/example_02_debugging_excerpt.md` | 2026-04-21 | Exported debugging conversation example |
+| `docs/genai_logs/exported_examples/example_03_report_refinement_excerpt.md` | 2026-04-21 | Exported report-refinement conversation example |
+| `docs/genai_logs/exported_examples/INDEX.md` | 2026-04-21 | Index of exported conversation examples |
 
 All evidence files are stored under `docs/genai_logs/`.
