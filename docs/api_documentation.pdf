@@ -1,0 +1,223 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [4 0 R 6 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1670 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 50 792 Tm
+(# API Documentation \(Coursework Submission\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Base URL: `http://127.0.0.1:8000`) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(## Response Formats) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Success:) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(```json) Tj
+0 -14 Td
+({) Tj
+0 -14 Td
+(  "data": {},) Tj
+0 -14 Td
+(  "meta": {}) Tj
+0 -14 Td
+(}) Tj
+0 -14 Td
+(```) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Error:) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(```json) Tj
+0 -14 Td
+({) Tj
+0 -14 Td
+(  "error_code": "STRING_CODE",) Tj
+0 -14 Td
+(  "message": "Human readable message",) Tj
+0 -14 Td
+(  "details": {}) Tj
+0 -14 Td
+(}) Tj
+0 -14 Td
+(```) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(## Auth) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(### POST /auth/register) Tj
+0 -14 Td
+(- Request: `{ "email": "user@example.com", "password": "password123" }`) Tj
+0 -14 Td
+(- Responses: `201`, `400`) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(### POST /auth/login) Tj
+0 -14 Td
+(- Request: `{ "email": "user@example.com", "password": "password123" }`) Tj
+0 -14 Td
+(- Responses: `200`, `401`) Tj
+0 -14 Td
+(- Returns bearer token in `data.access_token`) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(## Authors CRUD) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(- `POST /authors`) Tj
+0 -14 Td
+(- `GET /authors?page=1&size=10`) Tj
+0 -14 Td
+(- `GET /authors/{author_id}`) Tj
+0 -14 Td
+(- `PUT /authors/{author_id}`) Tj
+0 -14 Td
+(- `DELETE /authors/{author_id}`) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(## Books CRUD) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(- `POST /books`) Tj
+0 -14 Td
+(- `GET /books?page=1&size=10&genre=&year=&author_id=`) Tj
+0 -14 Td
+(- `GET /books/{book_id}`) Tj
+0 -14 Td
+(- `PUT /books/{book_id}`) Tj
+0 -14 Td
+(- `DELETE /books/{book_id}`) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(## Reviews CRUD) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1294 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 50 792 Tm
+() Tj
+0 -14 Td
+(- `POST /reviews`) Tj
+0 -14 Td
+(- `GET /reviews?page=1&size=10&book_id=&user_id=&rating=`) Tj
+0 -14 Td
+(- `PUT /reviews/{review_id}`) Tj
+0 -14 Td
+(- `DELETE /reviews/{review_id}`) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(## Analytics) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(### GET /analytics/genre-trends?start_year=&end_year=) Tj
+0 -14 Td
+(Returns book count and average rating grouped by genre.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(### GET /analytics/rating-distribution) Tj
+0 -14 Td
+(Returns histogram-style distribution for ratings 1-5.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(### GET /analytics/recommendations/{user_id}?limit=5) Tj
+0 -14 Td
+(Returns recommendation candidates by genre affinity and average ratings.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(## Status Codes) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(- `200 OK`) Tj
+0 -14 Td
+(- `201 Created`) Tj
+0 -14 Td
+(- `204 No Content`) Tj
+0 -14 Td
+(- `400 Bad Request`) Tj
+0 -14 Td
+(- `401 Unauthorized`) Tj
+0 -14 Td
+(- `403 Forbidden`) Tj
+0 -14 Td
+(- `404 Not Found`) Tj
+0 -14 Td
+(- `409 Conflict`) Tj
+0 -14 Td
+(- `422 Unprocessable Entity`) Tj
+0 -14 Td
+(- `500 Internal Server Error`) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(## Authentication) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Protected routes require:) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(`Authorization: Bearer <token>`) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000317 00000 n 
+0000002039 00000 n 
+0000002165 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3511
+%%EOF
