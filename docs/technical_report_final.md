@@ -3,8 +3,8 @@
 **Module:** XJCO3011 Web Services and Web Data  
 **Assessment:** Coursework 1 (Individual API Development Project)  
 **Student Repository:** [https://github.com/Yuk11119/Web_Services_cw1](https://github.com/Yuk11119/Web_Services_cw1)  
-**API Documentation (PDF):** [docs/api_documentation.pdf](./api_documentation.pdf)  
-**Presentation / Visuals Link (to be finalised in Step 3):** [TBD_SLIDES_LINK](https://example.com/tbd)
+**API Documentation (PDF):** [https://github.com/Yuk11119/Web_Services_cw1/blob/main/docs/api_documentation.pdf](https://github.com/Yuk11119/Web_Services_cw1/blob/main/docs/api_documentation.pdf)  
+**Presentation / Visuals Link:** [https://github.com/Yuk11119/Web_Services_cw1/blob/main/docs/presentation_slides.pptx](https://github.com/Yuk11119/Web_Services_cw1/blob/main/docs/presentation_slides.pptx)
 
 ## 1. Project Overview
 This project implements a data-driven RESTful API for managing book metadata, authors, and reviews, with additional analytics endpoints for genre trends, rating distributions, and recommendation candidates. The work was designed to meet coursework requirements for CRUD functionality, SQL-backed persistence, endpoint documentation, and oral demonstration readiness.
